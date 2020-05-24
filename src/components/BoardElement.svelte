@@ -1,7 +1,6 @@
 <script>
   export let element;
   export let handleClick;
-  console.log(handleClick);
 
   const elementToColorMap = {
     0: "white",
@@ -9,15 +8,25 @@
     2: "yellow"
   };
 
-  const colorClass = elementToColorMap[element];
+  $: colorClass = elementToColorMap[element];
 </script>
 
 <style>
+  .white {
+    background-color: #f8f8ff;
+  }
+
+  .red {
+    background-color: #fe1422;
+  }
+
+  .yellow {
+    background-color: #feed04;
+  }
   td {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: pink;
     border: 10px solid #020138;
   }
 </style>

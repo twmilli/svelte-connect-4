@@ -49,9 +49,7 @@ export default {
     production && terser()
   ],
   watch: {
-    clearScreen: false,
-    // Add this line to your config
-    include: "public/global.css"
+    clearScreen: false
   }
 };
 
